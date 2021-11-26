@@ -4,6 +4,16 @@ body
     color: white;
     background-color: black;
 }
+a
+{
+    text-decoration: none;
+    font-weight: 400;
+    color: white;
+}
+a:hover
+{
+    color: rgb(255, 142, 161);
+}
 
 .main
 {
@@ -13,13 +23,68 @@ body
     left: 0;
     right:0;
     bottom:0;
+
     margin-left:auto;
     margin-right:auto;
+
+    text-align: center;
 }
 
 .logo
 {
-    padding: 10vh 0 0 0;
+    padding: 10vh 0 5vh 0;
+    filter:brightness(0.20);
+    transition: all 0.3s;
+}
+
+.logo:hover
+{
+    filter:brightness(1.0);
+    transition: all 0.3s;
+}
+
+.menu
+{
     font-size: 45px;
+}
+
+.back
+{
+    float: left;
+
+    filter:brightness(0.20);
+    transition: all 0.3s;
+}
+
+.back:hover
+{
+    filter:brightness(1.0);
+    transition: all 0.3s;
+}
+
+.page
+{
+    position: fixed;
+    padding: 10vh 15vw;
+
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.selection
+{
+    padding: 12vh 0vh;
     text-align: center;
+}
+
+.clickable
+{
+    padding: 8px 0;
+    cursor: pointer;
+    border-bottom: 1px solid blanchedalmond;
+    font-size: 18px;
+}
+.clickable:hover
+{
+    background-color: rgba(255, 142, 161, 0.145);;
 }
