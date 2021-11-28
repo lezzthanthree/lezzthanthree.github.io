@@ -74,9 +74,14 @@ hr
     margin-right:auto;
 }
 
+.table
+{
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
 .selection
 {
-    padding: 12vh 0vh;
+    grid-column: 1/2;
     text-align: center;
 }
 
@@ -94,8 +99,6 @@ hr
 
 .content
 {
-    position: absolute;
-    top: 23%;
-    left: 25%; 
-    margin-right: 10%;
+    margin-left: 5%;
+    grid-column: 2/3;
 }
