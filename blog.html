@@ -15,14 +15,27 @@
                 <div class="back">
                     <a href="index.html"><img src="img/logo-300px.png" width="90" height="90"></a>
                 </div>  
-                <div class="selection">
-                    <h2> about me </h2>
+                <div class="selection" id="div1">
+                    <h2> blog </h2>
+                    <script>
+                        for (let i = 2020; i < 2050; i++) 
+                        {
+                            const newDiv = document.createElement("div");
+                            newDiv.className = "clickable";
+                            const newContent = document.createTextNode(i);
+                            newDiv.appendChild(newContent);
+                            document.getElementById("div1").appendChild(newDiv);
+                        }
+                    </script>
+
+                    <!---
                     <div class="clickable">
                         names
                     </div>
                     <div class="clickable">
                         socials
                     </div>
+                    -->
                 </div>
                 <div class="content">
                     <h1>Soon!</h1>
