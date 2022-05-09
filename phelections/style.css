@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body
+{   
+    font-family:'Open Sans';
+    color: white;
+    background-color: black;
+}
+a
+{
+    text-decoration: none;
+    font-weight: 400;
+    color: white;
+}
+a:hover
+{
+    color: rgb(255, 142, 161);
+}
+
+hr
+{
+    border-style: solid;
+    border-width: 2px;
+}
+
+.main
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    text-align: center;
+}
+
+.logo
+{
+    padding: 10vh 0 5vh 0;
+    filter:brightness(0.20);
+    transition: all 0.3s;
+}
+
+.logo:hover
+{
+    filter:brightness(1.0);
+    transition: all 0.3s;
+}
+
+.menu
+{
+    font-size: 45px;
+}
+
+.back
+{
+    float: left;
+
+    filter:brightness(0.20);
+    transition: all 0.3s;
+}
+
+.back:hover
+{
+    filter:brightness(1.0);
+    transition: all 0.3s;
+}
+
+.page
+{
+    position: fixed;
+    padding: 10vh 12vw;
+
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.table
+{
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+.selection
+{
+    grid-column: 1/2;
+    text-align: center;
+    height: 600px;
+    overflow: auto;
+}
+
+.clickable
+{
+    padding: 8px 0;
+    cursor: pointer;
+    border-bottom: 1px solid blanchedalmond;
+    font-size: 18px;
+}
+.clickable:hover
+{
+    background-color: rgba(255, 142, 161, 0.145);;
+}
+
+.content
+{
+    margin-left: 5%;
+    grid-column: 2/3;
+}
