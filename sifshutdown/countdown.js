@@ -14,7 +14,7 @@
         console.log(today);
 
     // Set date
-        let dayOfTermination = new Date("2023-03-31T07:00:00+00:00"),
+        let dayOfTermination = new Date("2023-06-30T07:00:00+00:00"),
         ddTerminate = String(dayOfTermination.getDate()).padStart(2, "0"),
         mmTerminate = String(dayOfTermination.getMonth() + 1).padStart(2, "0"),
         yyyyTerminate = dayOfTermination.getFullYear(),
