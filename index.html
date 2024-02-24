@@ -1,24 +1,62 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <!-- The Stylesheet-->
-        <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/page.css">
         <title>
             Smilie
         </title>
+        <title>Document</title>
     </head>
 
     <body>
-        <!-- Main Page-->
-        <div class="main">
-            <div class="logo">
-                <img src="img/logo-300px.png">
-                <div class="menu">
-                <a href="blog.html"> blog </a> ●
-                <a href="code.html"> code </a> ●
-                <a href="fandom.html"> fandom </a> ●
-                <a href="test/index.html"> test </a> 
+        <div id="main">
+            <div id="main-content">
+                <div id="main-section">
+                    <div class="logo">
+                        <img src="img/logo-300px.png">
+                    </div>
+                    <div id="menu">
+                        <div class="clickable" onclick="expand('aboutme')">
+                            about me
+                        </div>
+                        <div class="clickable" onclick="expand('code')">
+                            code
+                        </div>
+                        <div class="clickable" onclick="expand('blog')">
+                            blog
+                        </div>
+                    </div>
+                </div>
+                <div id="socials">
+                    <a href="https://www.github.com/lezzthanthree" class="fa fa-github"></a>
+                    <a href="https://www.youtube.com/SmiliePop" class="fa fa-youtube"></a>
+                    <a href="https://www.reddit.com/lezzthanthree" class="fa fa-reddit"></a>
                 </div>
             </div>
         </div>
+        <div class="page" >
+            <div class="header">
+                <img src="./img/logo-300px.png" class="back" onclick="reset(aboutme)">
+            </div>
+            <div class="content" id="aboutme">
+                <h1>
+                    Hey there!
+                </h1>
+                Name's Smilie Pop, also known as the username lezzthanthree. 
+            </div>
+            <div class="content" id="blog">
+                <div class="centerdiv">
+                    <h1 id="soon">
+                        ...
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <script src="./js/jquery-3.7.1.js"></script>
+        <script src="./js/expand.js"></script>
     </body>
 </html>

@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*
+{
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    font-family:'Open Sans', sans-serif;;
+}
+
+body
+{
+    display: flex;
+    background-color: #101010;
+    justify-content: center;
+    align-items: center;
+    /* padding: 100px 0; */
+}
+
+a
+{
+    text-decoration: none;
+}
+
+#main
+{
+    /* display: none; */
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-content
+{
+    display:flex;
+    align-items: center;
+    opacity: 40%;
+    flex-direction: column;
+    transition: all 0.3s;
+    animation: open 1s;
+}
+
+#main-section
+{
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (min-width: 720px) {
+    #main-section
+    {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    #main-section
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+#menu
+{
+    /* display: none; */
+    font-size: 2.5em;
+    padding: 20px;
+}
+
+#main-content:hover
+{
+    opacity: 100%;
+    transition: all 0.3s;
+}
+
+@keyframes open
+{
+    0%
+    {
+        opacity: 0%;
+    }
+    100%
+    {
+        opacity: 40%;
+    }
+}
+
+.clickable
+{
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.clickable:hover, .fa:hover
+{
+    color: pink;
+    transition: all 1s;
+}
+
+.fa
+{
+    font-size: 50px;
+    transition: all 0.3s;
+}
+
+#socials a
+{
+    margin: 0 5px;
+}
+
+#blog
+{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#soon
+{
+    font-size: 50px;
+}
+
+.centerdiv
+{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
