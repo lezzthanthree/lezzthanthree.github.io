@@ -1,4 +1,4 @@
-var current_section = ''
+var current_section = 'main'
 
 var videoLinks = 
 {
@@ -17,8 +17,14 @@ function expand(section)
 {
     current_section = section
     $("#main").fadeOut(300, () => {
-        $(".page").fadeIn(300);
-        $("#" + section).fadeIn(300);
+        $(".page")
+            .css({display: "flex"})
+            .hide()
+            .fadeIn(300);
+        $("#" + section)
+            .css({display: "flex"})
+            .hide()
+            .fadeIn(300);
     });
 
     if (section == 'edits')
@@ -30,6 +36,8 @@ function expand(section)
 function reset()
 {
     $(".page, #" + current_section).fadeOut(300, () => $("#main").fadeIn(300))
+    current_section = 'main'
+    $('#video-preview').attr('src', videoLinks['introMonika']);
 }
 
 function showpreview(url)

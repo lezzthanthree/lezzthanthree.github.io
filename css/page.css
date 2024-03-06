@@ -36,18 +36,12 @@
 
 #aboutme, #code, #blog, #edits
 {
-    display: none
-}
-
-#edits
-{
-    display: flex;
-    flex-direction: row;
+    display: none;
     overflow: hidden;
 }
 
 @media only screen and (min-width: 720px) {
-    #edits
+    #edits, #code
     {
         flex-direction: row;
     }
@@ -67,7 +61,7 @@
 }
 
 @media only screen and (max-width: 720px) {
-    #edits
+    #edits, #code   
     {
         flex-direction: column-reverse;
         text-align: center;
@@ -86,7 +80,7 @@
     }
 }
 
-#edit-lists
+#edit-lists, #code-lists
 {
     margin: 10px 10px;
     height: 100%;
@@ -103,7 +97,15 @@
     cursor: pointer;
 }
 
-#edit-preview
+#code-lists > ul > li
+{
+    padding: 10px 0;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    cursor: pointer;
+}
+
+#edit-preview,  #code-preview
 {
     /* width: 50%; */
     height: 50vh;
